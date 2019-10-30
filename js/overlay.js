@@ -11,7 +11,7 @@ $("body").append($overlay);
 $("#gallery a").click(function(event) {
   event.preventDefault();
   var imageLocation = $(this).attr("href");
-  var imageCaption =  $(this).children("img").attr("alt");
+  var imageCaption = $(this).children("img").attr("alt");
   $overlay.append($exit);
   updateImage(imageLocation, imageCaption);
   $overlay.append($image);
@@ -19,7 +19,7 @@ $("#gallery a").click(function(event) {
   $overlay.append($caption);
   $image.after($rewind);
   $image.before($forward);
-  $overlay.fadeIn(1500);
+  $overlay.fadeIn(1000);
 });
 
 $forward.on("click", function(event) {
@@ -43,7 +43,7 @@ $("body").keydown(function(event){
 });
 
 $exit.on("click", function() {
-  $overlay.fadeOut(1000).hide();
+  $overlay.fadeOut(1000);
 });
 
 $("body").keydown(function(event) {

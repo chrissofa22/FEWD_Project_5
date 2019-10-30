@@ -33,7 +33,7 @@ input {
   padding: 10px;
   width: 100%;
   border-radius: 10px;
-  border: 1px solid rgb(255, 85, 184);
+  border: 3px solid rgb(236, 90, 255);
   background: rgb(255, 255, 255);
 }
 
@@ -49,7 +49,8 @@ input {
 
 #gallery a:hover {
   border-radius: 10px;
-  background-color:rgb(236, 90, 255);opacity:0.5;
+  background-color:rgb(236, 90, 255);
+  opacity:0.5;
 }
 
 #gallery li {
@@ -112,6 +113,13 @@ input {
   right: 35%;
 }
 
+#forward:active,
+#rewind:active {
+  border-radius: 100%;
+  background-color:rgb(236, 90, 255);
+  opacity:0.6;
+}
+
 #forward img,
 #rewind img {
   width: 100%;
@@ -124,6 +132,11 @@ input {
   height: 40px;
   top: 4%;
   right: 4%;
+}
+
+#exit:active {
+  background-color:rgb(236, 90, 255);
+  opacity:0.6;
 }
 
 #exit img {
